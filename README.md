@@ -1,8 +1,9 @@
-# imgproxy
+# imgproxy + pdf
 
 <img align="right" width="200" height="200" title="imgproxy logo"
      src="https://cdn.rawgit.com/DarthSim/imgproxy/master/logo.svg">
 
+Fork of ImgProxy with PDF support. If you need extra features consider buying a PRO version to support authors.
 
 [![CircleCI branch](https://img.shields.io/circleci/project/github/imgproxy/imgproxy/master.svg?logo=circleci&style=for-the-badge)](https://circleci.com/gh/imgproxy/imgproxy) [![Docker](https://img.shields.io/badge/docker-darthsim%2Fimgproxy-blue.svg?logo=docker&logoColor=white&style=for-the-badge)](https://hub.docker.com/r/darthsim/imgproxy/) [![Docker Pulls](https://img.shields.io/docker/pulls/darthsim/imgproxy.svg?logo=docker&logoColor=white&style=for-the-badge)](https://hub.docker.com/r/darthsim/imgproxy/) [![Gitter](https://img.shields.io/gitter/room/imgproxy/imgproxy?logo=gitter&style=for-the-badge)](https://gitter.im/imgproxy/imgproxy)
 

@@ -10,7 +10,7 @@ RUN go build -v -o /usr/local/bin/imgproxy
 # Final image
 
 FROM debian:bullseye-slim
-LABEL maintainer="Sergey Alexandrovich <darthsim@gmail.com>"
+LABEL maintainer="Dmitry Ishkov <dmitry@hey.com>"
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
