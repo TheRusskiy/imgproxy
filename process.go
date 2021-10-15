@@ -22,6 +22,7 @@ var errConvertingNonSvgToSvg = newError(422, "Converting non-SVG images to SVG i
 func imageTypeLoadSupport(imgtype imageType) bool {
 	return imgtype == imageTypeSVG ||
 		imgtype == imageTypeICO ||
+		imgtype == imageTypePDF ||
 		vipsTypeSupportLoad[imgtype]
 }
 

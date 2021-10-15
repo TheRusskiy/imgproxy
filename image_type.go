@@ -27,6 +27,7 @@ const (
 	imageTypeAVIF    = imageType(C.AVIF)
 	imageTypeBMP     = imageType(C.BMP)
 	imageTypeTIFF    = imageType(C.TIFF)
+	imageTypePDF     = imageType(C.PDF)
 
 	contentDispositionFilenameFallback = "image"
 )
@@ -44,6 +45,7 @@ var (
 		"avif": imageTypeAVIF,
 		"bmp":  imageTypeBMP,
 		"tiff": imageTypeTIFF,
+		"pdf":  imageTypePDF,
 	}
 
 	mimes = map[imageType]string{
@@ -57,6 +59,7 @@ var (
 		imageTypeAVIF: "image/avif",
 		imageTypeBMP:  "image/bmp",
 		imageTypeTIFF: "image/tiff",
+		imageTypePDF:  "application/pdf",
 	}
 
 	contentDispositionsFmt = map[imageType]string{
@@ -70,6 +73,7 @@ var (
 		imageTypeAVIF: "inline; filename=\"%s.avif\"",
 		imageTypeBMP:  "inline; filename=\"%s.bmp\"",
 		imageTypeTIFF: "inline; filename=\"%s.tiff\"",
+		imageTypePDF:  "inline; filename=\"%s.pdf\"",
 	}
 )
 

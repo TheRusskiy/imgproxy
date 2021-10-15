@@ -165,6 +165,8 @@ func (img *vipsImage) Load(data []byte, imgtype imageType, shrink int, scale flo
 		err = C.vips_bmpload_go(unsafe.Pointer(&data[0]), C.size_t(len(data)), &tmp)
 	case imageTypeTIFF:
 		err = C.vips_tiffload_go(unsafe.Pointer(&data[0]), C.size_t(len(data)), &tmp)
+	case imageTypePDF:
+		err = C.vips_pdfload_go(unsafe.Pointer(&data[0]), C.size_t(len(data)), &tmp)
 	}
 	if err != 0 {
 		return vipsError()
@@ -206,6 +208,8 @@ func (img *vipsImage) Save(imgtype imageType, quality int) ([]byte, context.Canc
 		err = C.vips_bmpsave_go(img.VipsImage, &ptr, &imgsize)
 	case imageTypeTIFF:
 		err = C.vips_tiffsave_go(img.VipsImage, &ptr, &imgsize, C.int(quality))
+	case imageTypePDF:
+		err = C.vips_pdfsave_go(img.VipsImage, &ptr, &imgsize)
 	}
 	if err != 0 {
 		C.g_free_go(&ptr)
